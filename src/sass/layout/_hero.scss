@@ -1,0 +1,61 @@
+.hero {
+    padding-top: 30px;
+    &__title {
+        font-size: 24px;
+    }
+}
+
+.form__area--main {
+    margin-top: 10px;
+}
+
+.form__input--main {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    border: 2px solid $middle-gray-color;
+}
+
+.form__box {
+    display: flex;
+    width: 100%;
+    // justify-content: space-between;
+}
+
+.form__input {
+    margin-top: 8px;
+    width: 100%;
+    height: 30px;
+    border: 2px solid $middle-gray-color;
+}
+
+.form__box--2 {
+    margin-right: 40px;
+    width: 50%;
+}
+
+.form__box--3 {
+    width: 50%;
+}
+
+.form__area {
+    
+    margin-top: 8px;
+}
+
+.form__title {
+    font-size: 14px;
+}
+
+.form__btn {
+    margin-top: 12px;
+    width: 174px;
+    height: 30px;
+    text-transform: uppercase;
+    color: $white-text-color;
+    background-color: $accent-color;
+    border-radius: 4px;
+    font-size: 14px;
+
+    cursor: pointer;
+}
