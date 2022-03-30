@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://luxplanjay.github.io/team-proj-demo",
+  "homepage": "https://AntonZenko.github.io/testWebSite",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-proj-demo/"
+    "build": "parcel build src/*.html --public-url /testWebSite/"
   },
   "repository": {
     "type": "git",
