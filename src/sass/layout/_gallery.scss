@@ -1,5 +1,5 @@
 .gallery {
-    margin-bottom: 200px;
+    padding-bottom: 20px;
 }
 .gallery__list {
     margin-top: 20px;
@@ -13,16 +13,16 @@
 
 .gallery__item {
     height: 100px;
-    background-color: $accent-color;
+    background-color: $middle-gray-color;
     flex-basis: calc(100% / 2 - 20px);
     margin-left: 20px;
     margin-bottom: 20px;
 
 }
 
-.gallery__item:nth-child(2n + 1) {
-    background-color: orange;
-}
+// .gallery__item:nth-child(2n + 1) {
+//     background-color: orange;
+// }
 
 
 .gallery__btn {
