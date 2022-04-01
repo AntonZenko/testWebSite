@@ -6,15 +6,29 @@
     &__title {
         font-size: 24px;
     }
-}
-
-.hero__box {
     @media screen and (min-width:980px) {
-        
-        display: flex;
+    padding-top: 20px;
+    padding-bottom: 30px;
     }
 }
 
+.hero__box {
+    @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 14px 24px 34px 20px;
+        background-color: #cccccc;
+        border-radius: 6px;
+
+    }
+}
+.form {
+    @media screen and (min-width:768px) {
+        width: 280px;
+
+    }
+}
 .form__area--main {
     margin-top: 10px;
 }
@@ -42,6 +56,9 @@
 .form__box--2 {
     margin-right: 40px;
     width: 50%;
+    @media screen and (min-width:980px) {
+        margin-right: 18px;
+    }
 }
 
 .form__box--3 {
@@ -89,5 +106,18 @@
             margin-top: 20px;
             font-weight: 700;
 		}
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 294px;
+            height: 194px;
+        }
 
+}
+
+.more__btn {
+    @media screen and (min-width:980px) {
+        text-align: center;
+    }
 }
