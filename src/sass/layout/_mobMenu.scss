@@ -1,4 +1,7 @@
 .menu {
+    @media screen and (min-width:940px) {
+        display: none;
+    }
     padding-left: 20px;
     display: flex;
     align-items: center;

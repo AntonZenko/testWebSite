@@ -1,8 +1,12 @@
 .header {
-    background-image: linear-gradient(rgba(238, 238, 238, 0), rgba(238, 238, 238, 0.7)),url(/images/background/pattern.png);
-    background-position: top 44px left 0;
+    background-image: linear-gradient(to bottom, white, white 44px, transparent 44px, transparent);
+    @media screen and (min-width:980px) {
+        background-image: url(/images/background/header-bg-desk.png);
+        background-size: 1280px;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+    }
 }
-
 
 // ----------languages---------------
 
@@ -12,22 +16,25 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+
     &__item {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
     &__item:not(:last-child) {
         margin-right: 10px;
     }
+
     &__btn {
         width: 40px;
         height: 24px;
         background-color: $ultra-light-gray;
-        // background-color: $ultra-light-gray;
         border-radius: 4px;
         color: $middle-gray-color;
     }
+
     &__btn:hover {
         color: $white-text-color;
         background-color: $middle-gray-color;
@@ -35,18 +42,21 @@
     }
 }
 
-
 .current {
     background-color: $middle-gray-color;
     color: $white-text-color;
     border-radius: 4px;
 }
 
-
-
+.header__box {
+    @media screen and (min-width:980px) {
+        display: flex;
+        height: 75px;
+        justify-content: flex-end;
+    }
+}
 
 // ----------------logo--------------
-
 .logo {
     display: flex;
     justify-content: center;
@@ -55,37 +65,122 @@
     width: 100%;
     height: 100px;
     background-color: $light-gray;
+    @media screen and (min-width:980px) {
+        width: 274px;
+        margin-left: 10px;
+        margin-right: 36px;
+        height: 72px;
+        border-radius: 50%;
+        border: 12px solid transparent;
+        transform: translateY(-40px);
+    }
     &__link {
         font-weight: bold;
         font-size: 36px;
         color: $white-text-color;
     }
 }
-
-
 // -------------------links-------------
+.links__box {
+    @media screen and (min-width:980px) {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% / 3);
+        
+    }
+}
+
+.links__container {
+    @media screen and (min-width:980px) {
+        width: 640px;
+    }
+}
+
+
+
 .links {
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+    
     &__item {
+        margin-top: 12px;
         display: flex;
-        align-items: center;
-        justify-content: flex-start;
     }
     &__link {
         margin-left: 6px;
         font-size: 12px;
-        font-weight: 400;
         text-transform: uppercase;
         color: $black-text-color;
         line-height: 1.2;
-    }
-    &__item:not(:first-child){
-        margin-top: 10px;
+        cursor: pointer;
+        &:hover {
+            color: $accent-color;
+        }
     }
     &__icon {
         fill: $light-gray;
     }
+    @media screen and (max-width:979px){
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        
+        &__item {
+            align-items: center;
+            justify-content: flex-start;
+        }
+        
+        &__item:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
 }
 
+
+.nav__list{
+    display: flex;
+    @media screen and (max-width:979px){
+        display: none;
+    }
+}
+.nav__item {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    color: $white-text-color;
+    text-transform: uppercase;
+    background-color: $menu-gray-color;
+    cursor: pointer;
+    &:hover {
+        background-color: $light-gray;
+    }
+
+    &:not(:last-child)::after {
+        content: '';
+        margin-left: 23px;
+        width: 1px;
+        height: 42px;
+        background-color: $light-gray;
+    }
+    &:not(:first-child)::before {
+        content: '';
+        margin-right: 23px;
+        width: 1px;
+        height: 42px;
+        background-color: #4e4853;
+    }
+    &:first-child {
+        padding-left: 23px;
+        border-radius: 3px 0 0 3px;
+    }
+    &:last-child {
+        padding-right: 23px;
+        border-radius: 0 3px 3px 0px;
+    }
+}
+
+
+.br {
+    @media screen and (max-width:940px){
+        display: none;
+    }
+}
