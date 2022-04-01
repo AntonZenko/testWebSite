@@ -1,4 +1,7 @@
 .samples__list {
+    @media screen and (min-width:980px) {
+        display: flex;
+    }
     // outline: 1px solid tomato;
 }
 
@@ -6,7 +9,11 @@
     cursor: pointer;
     &:not(:last-child) {
         margin-bottom: 20px;
-
+    }
+    @media screen and (min-width:980px) {
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
     }
 }
 
