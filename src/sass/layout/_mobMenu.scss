@@ -37,17 +37,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // position: absolute;
-    // top:60px;
-    // left: 0;
-    // width: 100vw;
-    // height: 100vh;
-    // padding: 48px 40px;
-    // padding: 48px 40px 70px 40px;
-    // transform: translateX(0);
-    // background-color: $white-text-color;
-    // transition: transform $transition;
-
     @media screen and (min-width:980px) {
         display: none;
     }
@@ -77,54 +66,15 @@
     overflow: hidden;
 }
 
-
-// .menu__item {
-//     &+& {
-//         margin-top: 30px;
-//     }
-// }
-
-// .menu__link {
-//     text-decoration: none;
-//     font-weight: 500;
-//     font-size: 40px;
-//     line-height: 0.67;
-//     letter-spacing: 0.02em;
-//     color: $middle-gray-color;
-
-//     &:hover,
-//     &:focus {
-//         color: $accent-color;
-//     }
-// }
-
-
 .mobile__menu {
-    width: 100vw;
-    // height: 320px;
+    width: 100%;
     border-radius: 6px;
     background-color: $site-menu-color;
-    // position: absolute;
-    // top: 164px;
-    // left: 62%;
-    // padding: 16px 
     padding-top: 4px;
     padding-bottom: 12px;
-
-
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // z-index: 2;
-
-    // transform: translatex(55%);
     transition: transform $transition;
     overflow-y: hidden;
 }
-
-// .site-menu.is-closed {
-//     transform: translate(-50%, -50%) rotateX(-90deg);
-// }
 
 .mobile__link {
     font-family: Arial, sans-serif;
@@ -157,30 +107,3 @@
     // color: #741468;
     background-color: #741468;
 }
-
-// .mob__btn {
-//     text-transform: uppercase;
-//     color: $white-text-color;
-//     background-color: transparent
-// }
-
-
-// .modal {
-//     position: absolute;
-//     width: 450px;
-//     top: 50%;
-//     left: 50%;
-//     padding: 40px;
-//     // right: 15;
-//     transform: translate(-50%, -50%) rotateX(0deg);
-//     background-color: $base-white-color;
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//         0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 4px;
-//     transition: transform $transition;
-//     overflow-y: hidden;
-// }
-
-// .backdrop.is-hidden .modal {
-//     transform: translate(-50%, -50%) rotateX(-90deg);
-// }
